@@ -27,4 +27,6 @@ Você pode abrir o arquivo `index.html` diretamente no navegador. Basta:
 1. Fazer o download do repositório
 2. Abrir o arquivo `index.html` com seu navegador favorito (Chrome, Firefox, Edge, etc)
 
+ou acesse por aqui:https://aniecss.github.io/Portfolio/
+
 Obrigada por visitar meu portfólio! 💻
