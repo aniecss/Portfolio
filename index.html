@@ -13,27 +13,37 @@
       font-family: 'Roboto', sans-serif;
     }
     body {
-      background: #f9f9f9;
-      color: #333;
+      background: #111;
+      color: #e0e0e0;
       line-height: 1.6;
     }
     header {
-      background: #222;
-      color: #fff;
+      background: #1a1a1a;
+      color: #00ffff;
       padding: 2rem;
       text-align: center;
+      border-bottom: 2px solid #00ffff30;
     }
     header h1 {
       font-size: 2.5rem;
+    }
+    header p {
+      margin-top: 0.5rem;
+      color: #ccc;
     }
     nav {
       margin-top: 1rem;
     }
     nav a {
-      color: #fff;
+      color: #00ffff;
       margin: 0 1rem;
       text-decoration: none;
       font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #0ff;
+      text-shadow: 0 0 5px #0ff;
     }
     section {
       max-width: 1000px;
@@ -41,49 +51,63 @@
       padding: 1rem;
     }
     h2 {
-      color: #555;
+      color: #00ffff;
       margin-bottom: 1rem;
-      border-bottom: 2px solid #eee;
+      border-bottom: 2px solid #00ffff40;
       padding-bottom: 0.5rem;
     }
     .projeto {
-      background: #fff;
-      padding: 1rem;
+      background: #1c1c1c;
+      padding: 1.5rem;
       margin-bottom: 1.5rem;
-      border-left: 4px solid #222;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      border-radius: 8px;
+      border-left: 4px solid #00ffff;
+      box-shadow: 0 0 15px #00ffff10;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .projeto:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 25px #00ffff30;
     }
     .projeto h3 {
       margin-bottom: 0.5rem;
-      color: #222;
+      color: #fff;
+    }
+    .projeto ul {
+      margin-left: 1.5rem;
     }
     ul {
       margin-left: 1.5rem;
     }
+    li {
+      margin-bottom: 0.4rem;
+    }
     footer {
       text-align: center;
       padding: 2rem;
-      background: #222;
-      color: #fff;
+      background: #1a1a1a;
+      color: #888;
       margin-top: 2rem;
+      border-top: 1px solid #00ffff20;
     }
     .contato a {
-      color: #fff;
+      color: #0ff;
       text-decoration: none;
       margin: 0 0.5rem;
     }
     .contato-info {
-      background: #fff;
+      background: #1c1c1c;
       padding: 1rem;
       margin-top: 1rem;
-      border-left: 4px solid #222;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      border-left: 4px solid #00ffff;
+      box-shadow: 0 0 15px #00ffff10;
+      border-radius: 8px;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Aninha</h1>
+    <h1>Kariohana R. S. Araújo</h1>
     <p>Estudante de Ciências da Computação | Desenvolvedora em formação</p>
     <nav>
       <a href="#sobre">Sobre</a>
@@ -102,12 +126,13 @@
     <h2>Projetos</h2>
 
     <div class="projeto">
-      <h3>Sistema de Gerenciamento de Restaurantes (Python)</h3>
-      <p>Sistema com cadastro de restaurantes, avaliações de clientes e cardápio integrado. Utiliza princípios de POO como herança, encapsulamento e classes abstratas.</p>
+      <h3>API de Gerenciamento de Usuários e Mercados (FastAPI)</h3>
+      <p>Desenvolvi uma API RESTful utilizando o framework FastAPI para o gerenciamento de usuários e empresas do tipo mercado. A aplicação permite o cadastro, autenticação e listagem de usuários, com suporte a múltiplos mercados por usuário, e persistência dos dados em arquivos JSON.</p>
       <ul>
-        <li>Cadastro e status de restaurantes</li>
-        <li>Registro e cálculo de avaliações</li>
-        <li>Gestão de cardápio com descontos</li>
+        <li>Criação de endpoints REST com FastAPI para operações de CRUD</li>
+        <li>Estruturação de modelos de dados com Pydantic</li>
+        <li>Implementação de autenticação básica com controle de tentativas</li>
+        <li>Armazenamento e recuperação de dados via leitura/escrita em JSON</li>
       </ul>
     </div>
 
